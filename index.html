@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Independent scholarship application intake portal for the 2026 Morocco scholarship intake.">
+<title>Scholarship Application Portal — 2026</title>
+<style>
+:root{--g:#08633f;--g2:#06482f;--gold:#c6a044;--ink:#14221b;--muted:#65736c;--line:#dfe7e2;--bg:#f4f7f5;--white:#fff;--danger:#b42318}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:800;color:var(--g);font-size:17px}.status{font-size:12px;padding:6px 10px;border-radius:999px;background:#fff7df;color:#6c5100;border:1px solid #e5d08c;font-weight:700}
+.hero{background:linear-gradient(135deg,var(--g2),var(--g));color:#fff}.hero-in{max-width:1120px;margin:auto;padding:62px 22px 66px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.8px;opacity:.82}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.04;margin:12px 0 14px;max-width:850px}.hero p{max-width:760px;font-size:18px;opacity:.94}.deadline{display:inline-block;margin:8px 0 22px;padding:9px 13px;border:1px solid rgba(255,255,255,.35);border-radius:8px;font-weight:800}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:8px;border:0;text-decoration:none;font-weight:800;cursor:pointer;font:inherit}.primary{background:#fff;color:var(--g)}.green{background:var(--g);color:#fff}.soft{background:#edf3ef;color:#194b38}
+.wrap{max-width:1120px;margin:auto;padding:30px 22px}.notice{background:#fff8df;border:1px solid #e5d08c;border-radius:11px;padding:16px;margin-bottom:22px}.notice strong{color:#6c5100}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.card h3{color:var(--g);margin:0 0 6px}.card p{margin:0;color:var(--muted);font-size:14px}
+form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}.section{border-top:1px solid #e8eeea;padding:25px 0}.section:first-child{border-top:0;padding-top:0}.section h2{margin:0 0 15px;color:var(--g);font-size:21px}.section p{color:var(--muted);font-size:14px}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:0 18px}.full{grid-column:1/-1}label{display:block;font-weight:750;margin:13px 0 7px;font-size:14px}input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cbd7d0;border-radius:7px;background:#fff;font:inherit;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:3px solid #d6eee4;border-color:var(--g)}textarea{min-height:125px;resize:vertical}.help{font-size:12px;color:var(--muted);margin-top:5px}.req{color:var(--danger)}.check{display:flex;gap:10px;align-items:flex-start;font-weight:500}.check input{width:auto;margin-top:5px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;padding-top:10px}.msg{display:none;margin-top:18px;padding:16px;border-radius:9px}.success{background:#e9f7ef;color:#145a38;border:1px solid #b9e2c9}.error{background:#fff0ee;color:#8d2017;border:1px solid #efc2bd}
+footer{background:#14221b;color:#dfe9e3;text-align:center;padding:30px 22px;font-size:12px;margin-top:35px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:20;padding:20px}.modal-box{max-width:560px;background:#fff;border-radius:14px;margin:8vh auto;padding:26px}.ref{font-size:25px;font-weight:900;letter-spacing:1px;color:var(--g);background:#eef7f2;padding:14px;border-radius:8px;text-align:center;margin:16px 0}
+@media(max-width:760px){.cards,.fields{grid-template-columns:1fr}.full{grid-column:auto}.nav{align-items:flex-start}.status{max-width:180px;text-align:center}.hero-in{padding-top:45px}form{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Scholarship Application Portal</div><div class="status">Independent / Unofficial Portal</div></div></header>
+
+<section class="hero"><div class="hero-in">
+<div class="eyebrow">Morocco • 2026 intake</div>
+<h1>Scholarship Application 2026</h1>
+<p>Complete the applicant information and prepare your supporting documents for review through this independent intake portal.</p>
+<div class="deadline">Application deadline: October 20, 2026</div><br>
+<a class="btn primary" href="#application">Start Application</a>
+</div></section>
+
+<main class="wrap">
+<div class="notice"><strong>Verification notice:</strong> This is an independent application/intake portal. It is not the official website of Agence Marocaine de Coopération Internationale (AMCI). Before submitting personal documents, applicants should verify the scholarship call and the authorized submission channel with AMCI or the relevant official authority.</div>
+
+<div class="cards">
+<div class="card"><h3>01 — Applicant</h3><p>Personal, contact and identification information.</p></div>
+<div class="card"><h3>02 — Academic</h3><p>Qualifications, study preferences and motivation.</p></div>
+<div class="card"><h3>03 — Documents</h3><p>Upload supporting files through an authorized secure system.</p></div>
+</div>
+
+<form id="application" novalidate>
+<section class="section"><h2>1. Applicant information</h2><div class="fields">
+<div><label>Full legal name <span class="req">*</span></label><input required name="name" autocomplete="name"></div>
+<div><label>Date of birth <span class="req">*</span></label><input required type="date" name="dob"></div>
+<div><label>Place of birth <span class="req">*</span></label><input required name="birthplace"></div>
+<div><label>Nationality <span class="req">*</span></label><input required name="nationality"></div>
+<div><label>Country of residence <span class="req">*</span></label><input required name="residence"></div>
+<div><label>Gender</label><select name="gender"><option value="">Select</option><option>Female</option><option>Male</option><option>Prefer not to say</option></select></div>
+</div></section>
+
+<section class="section"><h2>2. Contact information</h2><div class="fields">
+<div><label>Email address <span class="req">*</span></label><input required type="email" name="email" autocomplete="email"></div>
+<div><label>Phone / WhatsApp <span class="req">*</span></label><input required type="tel" name="phone" autocomplete="tel"></div>
+<div class="full"><label>Current address <span class="req">*</span></label><textarea required name="address"></textarea></div>
+</div></section>
+
+<section class="section"><h2>3. Identification</h2><div class="fields">
+<div><label>Passport / national ID number</label><input name="id_number"></div>
+<div><label>Passport / ID expiry date</label><input type="date" name="id_expiry"></div>
+<div class="full"><label>Passport / ID file</label><input type="file" name="identity" accept=".pdf,.jpg,.jpeg,.png"><div class="help">Only upload through a secure authorized service when this form is connected to a real submission backend.</div></div>
+</div></section>
+
+<section class="section"><h2>4. Academic background</h2><div class="fields">
+<div><label>Highest qualification <span class="req">*</span></label><select required name="qualification"><option value="">Select</option><option>Secondary school</option><option>Bachelor's degree</option><option>Master's degree</option><option>Doctorate</option><option>Other</option></select></div>
+<div><label>Graduation year</label><input type="number" min="1950" max="2035" name="year"></div>
+<div><label>School / university <span class="req">*</span></label><input required name="institution"></div>
+<div><label>Field of study <span class="req">*</span></label><input required name="field"></div>
+<div><label>Grade / GPA</label><input name="gpa"></div>
+<div><label>Academic certificate</label><input type="file" name="certificate" accept=".pdf,.jpg,.jpeg,.png"></div>
+<div class="full"><label>Academic transcript</label><input type="file" name="transcript" accept=".pdf,.jpg,.jpeg,.png"></div>
+</div></section>
+
+<section class="section"><h2>5. Proposed study</h2><div class="fields">
+<div><label>Degree level <span class="req">*</span></label><select required name="degree"><option value="">Select</option><option>Bachelor's</option><option>Master's</option><option>Doctorate</option><option>Other</option></select></div>
+<div><label>Intended field <span class="req">*</span></label><input required name="intended"></div>
+<div><label>Preferred university / program</label><input name="choice1"></div>
+<div><label>Second choice</label><input name="choice2"></div>
+<div class="full"><label>Why do you want to study in Morocco? <span class="req">*</span></label><textarea required name="why"></textarea></div>
+<div class="full"><label>Motivation statement <span class="req">*</span></label><textarea required name="motivation"></textarea></div>
+</div></section>
+
+<section class="section"><h2>6. Supporting documents</h2><div class="fields">
+<div><label>Passport photograph</label><input type="file" name="photo" accept=".jpg,.jpeg,.png"></div>
+<div><label>CV / résumé</label><input type="file" name="cv" accept=".pdf,.doc,.docx"></div>
+<div><label>Motivation letter</label><input type="file" name="letter" accept=".pdf,.doc,.docx"></div>
+<div><label>Other document</label><input type="file" name="other" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"></div>
+</div></section>
+
+<section class="section"><h2>7. Declaration</h2>
+<label class="check"><input required type="checkbox" name="declaration"><span>I confirm that the information I provide is accurate and complete to the best of my knowledge. I understand that this independent portal does not itself constitute AMCI admission, selection, scholarship approval, or an official government submission channel. <span class="req">*</span></span></label>
+<label>Applicant's full name <span class="req">*</span></label><input required name="signature">
+<div class="actions"><button class="btn green" type="submit">Submit Application</button><button class="btn soft" type="reset">Clear Form</button></div>
+<div id="error" class="msg error"></div>
+</section>
+</form>
+</main>
+
+<footer>Independent scholarship intake portal • 2026<br>Deadline shown: October 20, 2026</footer>
+
+<div id="modal" class="modal"><div class="modal-box">
+<h2 style="margin-top:0;color:var(--g)">Application recorded locally</h2>
+<p>This demo has generated a reference number, but it has <strong>not transmitted your application to AMCI or any server</strong>.</p>
+<div id="ref" class="ref"></div>
+<p style="font-size:13px;color:var(--muted)">For real submissions, connect this interface to a secure, authorized backend before collecting applicant documents.</p>
+<button class="btn green" onclick="closeModal()">Close</button>
+</div></div>
+
+<script>
+const form=document.getElementById('application'), errorBox=document.getElementById('error'), modal=document.getElementById('modal'), ref=document.getElementById('ref');
+function makeRef(){const d=new Date(), y=d.getFullYear(), r=Math.random().toString(36).slice(2,8).toUpperCase();return `APP-${y}-${r}`;}
+form.addEventListener('submit',e=>{
+ e.preventDefault(); errorBox.style.display='none'; errorBox.textContent='';
+ if(!form.checkValidity()){form.reportValidity();return;}
+ const files=[...form.querySelectorAll('input[type=file]')];
+ const max=10*1024*1024;
+ for(const f of files){if(f.files[0] && f.files[0].size>max){errorBox.textContent=`The file "${f.files[0].name}" is larger than 10 MB. Please choose a smaller file.`;errorBox.style.display='block';f.focus();return;}}
+ ref.textContent=makeRef(); modal.style.display='block';
+});
+function closeModal(){modal.style.display='none'}
+window.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+</script>
+</body>
+</html>
